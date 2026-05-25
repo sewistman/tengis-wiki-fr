@@ -8,7 +8,7 @@
 <p>{% trans "SeaDrive 2.0 (and future versions) is redesigned with deeper integration to Windows 10 operating system. It supports Windows 10 1709 version (2017 Fall Update for Windows 10) and later versions. We recommend Windows 10 users to upgrade to SeaDrive 2.0 for more native virtual drive experience." %}</p>
 
 <h4>{% trans "Install and access the Virtual Drive" %}</h4>
-<p>{% trans "You can download SeaDrive 2.0 from official Seafile website. After installation and logging into your Seafile account, SeaDrive will start downloading library and file lists from the server (just as in SeaDrive 1.0.x). It may take some time, depending on the number of files available in your seafile account. The download is progressive, so in the mean time you can already access some files in the virtual drive." %}</p>
+<p>{% trans "You can download SeaDrive 2.0 from official Tengis Wiki website. After installation and logging into your Tengis Wiki account, SeaDrive will start downloading library and file lists from the server (just as in SeaDrive 1.0.x). It may take some time, depending on the number of files available in your Tengis Wiki account. The download is progressive, so in the mean time you can already access some files in the virtual drive." %}</p>
 <p>{% blocktrans %}To access the virtual drive, just open Windows file explorer. There is a "seadrive" node in the navigation pane of Windows file explorer.{% endblocktrans %}</p>
 
 <img src="{{ MEDIA_URL }}img/help/image-1584674198415.png" alt="" />
@@ -48,7 +48,7 @@
 <p>{% blocktrans %}You can manually choose which folders or files to be cached locally. If you find a folder consumes too much space, just choose to "Free up space" on that folder and all cached files in that folder will be cleaned. There is no need to set cache cleaning time and cache size limit as in SeaDrive 1.0. Because placeholders are just normal files created on your local disk, your cache size is only limited by the available disk space on your computer.{% endblocktrans %}</p>
 
 <p><b>{% trans "How to remove left-over SeaDrive shortcuts in Windows Explorer?" %}</b></p>
-<p>{% blocktrans %}The "SeaDrive" shortcut in Windows Explorer won't disappear after you exit SeaDrive program or switch Seafile accounts in SeaDrive. This is an intended behavior. You don't need to remove them if you still need to access the account later.{% endblocktrans %}</p>
+<p>{% blocktrans %}The "SeaDrive" shortcut in Windows Explorer won't disappear after you exit SeaDrive program or switch Tengis Wiki accounts in SeaDrive. This is an intended behavior. You don't need to remove them if you still need to access the account later.{% endblocktrans %}</p>
 <p>{% blocktrans %}In some corner cases, the "SeaDrive" shortcut will be left-over in Windows Explorer and you want to remove it.{% endblocktrans %}</p>
 <p>{% blocktrans %}You can usually remove those shortcuts by uninstalling SeaDrive program and choose "Remove account information" in the prompt dialog.{% endblocktrans %}</p>
 <p>{% blocktrans %}If uninstallation doesn't remove the shortcuts successfully, you can remove the SeaDrive shortcut in Windows Explorer by editing the registry. Open the path "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\" in registry editor. Remove the sub-keys correspond to the shortcut you want to remove.{% endblocktrans %}</p>

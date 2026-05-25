@@ -314,7 +314,7 @@ class WebSettings extends Component {
                     displayName={gettext('Disable sync with any folder')}
                     keyText='DISABLE_SYNC_WITH_ANY_FOLDER'
                     value={config_dict['DISABLE_SYNC_WITH_ANY_FOLDER']}
-                    helpTip={gettext('If turn on, the desktop clients will not be able to sync a folder outside the default Seafile folder.')}
+                    helpTip={gettext('If turn on, the desktop clients will not be able to sync a folder outside the default Tengis Wiki folder.')}
                   />
                 </Section>
 

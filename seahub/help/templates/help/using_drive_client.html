@@ -3,15 +3,15 @@
 
 {% block help_con %}
 
-<h3 class="hd">{% trans "Using Seafile drive client" %}</h3>
-<p>{% blocktrans %}After installing a drive client with the instructions on the <a href="https://www.seafile.com/en/download/">download page</a>, you can start it by double clicking the "SeaDrive" app icon on your desktop.{% endblocktrans %}</p>
+<h3 class="hd">{% trans "Using Tengis Wiki drive client" %}</h3>
+<p>{% blocktrans %}After installing a drive client with the instructions on the <a href="https://redirish.global">download page</a>, you can start it by double clicking the "SeaDrive" app icon on your desktop.{% endblocktrans %}</p>
 <p>{% blocktrans %}You'll be asked to choose a drive letter for the virtual drive. By default, "S:" will be used.{% endblocktrans %}</p>
-<p>{% trans "Then you'll be asked to log into your Seafile server." %}</p>
+<p>{% trans "Then you'll be asked to log into your Tengis Wiki server." %}</p>
 
 <img src="{{ MEDIA_URL }}img/help/drive-login.png" alt="Drive client login" />
 <p>{% trans "After successfully log into the server, the Drive client starts to fetch library and file list from the server. The file contents are not downloaded at this moment. So it'll not take very long. You can let it run in the background. You'll be noticed when the fetch is done." %}</p>
 <img src="{{ MEDIA_URL }}img/help/drive-fetch-finish.png" alt="Drive client fetch files">
-<p>{% trans "The virtual drive folder will be opened. You'll find it works just like an ordinary hard drive on your computer. The top level folders in the virtual drive are libraries on the Seafile server. File contents will be downloaded when you open a file. Recently opened file will be cached in your local disk. All cached files will be marked with a green tick." %}</p>
+<p>{% trans "The virtual drive folder will be opened. You'll find it works just like an ordinary hard drive on your computer. The top level folders in the virtual drive are libraries on the Tengis Wiki server. File contents will be downloaded when you open a file. Recently opened file will be cached in your local disk. All cached files will be marked with a green tick." %}</p>
 <img src="{{ MEDIA_URL }}img/help/drive.png" alt="Drive window" />
 
 <h4>{% trans "Synced State" %}</h4>
@@ -78,5 +78,5 @@
 
 <h4>{% trans "FAQ" %}</h4>
 <p><b>{% trans "1. Why can't I create new files or delete folders in root folder?" %}</b></p>
-<p>{% trans "The root folder of the virtual drive contains only library folders. Seafile can only sync files inside libraries. Files in the root folder cannot be uploaded to Seafile server. So it doesn't make sense to support creating files in root folder. Since the top level folders in the virtual drive represents libraries, we don't want users to delete their libraries by mistake. So the Drive client doesn't support deleting top level folders." %}</p>
+<p>{% trans "The root folder of the virtual drive contains only library folders. Tengis Wiki can only sync files inside libraries. Files in the root folder cannot be uploaded to Tengis Wiki server. So it doesn't make sense to support creating files in root folder. Since the top level folders in the virtual drive represents libraries, we don't want users to delete their libraries by mistake. So the Drive client doesn't support deleting top level folders." %}</p>
 {% endblock %}

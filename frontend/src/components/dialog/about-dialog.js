@@ -85,7 +85,7 @@ class AboutDialog extends React.Component {
             </button>
             <div className="about-content">
               <p><img src={this.getLogoSrc()} height={logoHeight} width={logoWidth} title={siteTitle} alt="logo" /></p>
-              <p>{gettext('Server Version: ')}{seafileVersion}<br />© {(new Date()).getFullYear()} {gettext('Seafile')}</p>
+              <p>{gettext('Server Version: ')}{seafileVersion}<br />© {(new Date()).getFullYear()} {gettext('Tengis Wiki')}</p>
               <p>{this.renderExternalAboutLinks()}</p>
               <p><a href={href} target="_blank" rel="noreferrer">{gettext('About Us')}</a></p>
             </div>

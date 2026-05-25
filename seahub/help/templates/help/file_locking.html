@@ -3,7 +3,7 @@
 
 {% block help_con %}
 <h3 class="hd">{% trans "File locking" %}</h3>
-<p>{% blocktrans %}When more than one person collaborate on a file, it's likely that more than one person modify the file at about the same time. Seafile handles this situation nicely with conflict files. But it's often more convenient to lock the file when one person wants to exclusively modify the file. Seafile Professional Edition supports file locking.{% endblocktrans %}</p>
+<p>{% blocktrans %}When more than one person collaborate on a file, it's likely that more than one person modify the file at about the same time. Tengis Wiki handles this situation nicely with conflict files. But it's often more convenient to lock the file when one person wants to exclusively modify the file. Tengis Wiki Professional Edition supports file locking.{% endblocktrans %}</p>
 <p>{% trans "File locking works on both the web app and the desktop syncing client. We'll introduce them one by one." %}</p>
 <h4>{% trans "File locking on the Web App" %}</h4>
 <p>{% blocktrans %}To lock a file, you can navigate into the file's folder on the web app, and click on the "operations" drop-down menu.{% endblocktrans %}</p>
@@ -12,7 +12,7 @@
 <img src="{{ MEDIA_URL }}img/help/web_file_locked.png" alt="" />
 <h4>{% trans "File locking on the desktop client" %}</h4>
 <p>{% trans "After a library is synced to the desktop, you can lock/unlock files in that library inside File Explorer on Windows or Finder on Mac OS." %}</p>
-<p>{% blocktrans %}To lock a file, just right click on a synced file and choose "lock this file" in the "Seafile" menu.{% endblocktrans %}</p>
+<p>{% blocktrans %}To lock a file, just right click on a synced file and choose "lock this file" in the "Tengis Wiki" menu.{% endblocktrans %}</p>
 <img src="{{ MEDIA_URL }}img/help/desktop_lock_file.png" alt="" />
 <p>{% blocktrans %}If a file is locked by you, you can see an orange "stop sign" on the file icon. You can choose to unlock it.{% endblocktrans %}</p>
 <img src="{{ MEDIA_URL }}img/help/desktop_my_locked_file.png" alt="" />
@@ -20,7 +20,7 @@
 <img src="{{ MEDIA_URL }}img/help/desktop_other_locked_file.png" alt="" />
 <p>{% trans "If a library is not synced, you can still use cloud file browser to lock and unlock files in it." %}</p>
 <h4>{% trans "Auto locking office files" %}</h4>
-<p>{% trans "After a library is synced to the desktop, when you open a Microsoft Office file inside the library, Seafile automatically locks the file. When you close the file, Seafile automatically unlocks the file. The locking state is propagated to other computers syncing this library. It prevents concurrent editing the same Office file and is convenient for collaboration." %}</p>
+<p>{% trans "After a library is synced to the desktop, when you open a Microsoft Office file inside the library, Tengis Wiki automatically locks the file. When you close the file, Tengis Wiki automatically unlocks the file. The locking state is propagated to other computers syncing this library. It prevents concurrent editing the same Office file and is convenient for collaboration." %}</p>
 <h4>{% trans "Details about file locking" %}</h4>
 <p>{% trans "There are a few useful tips about how file locking works:" %}</p>
 <ul>

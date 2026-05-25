@@ -157,8 +157,8 @@ class OrgSAMLConfig extends Component {
                     </Fragment>
                   </Section>
 
-                  <Section headingText={gettext('Configure Seafile')}>
-                    <p className="text-secondary mt-1">{gettext('Use information from your Identity Provider to configure Seafile')}</p>
+                  <Section headingText={gettext('Configure Tengis Wiki')}>
+                    <p className="text-secondary mt-1">{gettext('Use information from your Identity Provider to configure Tengis Wiki')}</p>
                     <Fragment>
                       <OrgSamlConfigInput
                         value={metadataUrl}
