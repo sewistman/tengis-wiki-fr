@@ -44,7 +44,7 @@ Copyright owner is **Tengis Wiki**. The copyright line should read:
 
 ## External URLs
 
-Any URL referencing `seafile.com`, `seafileltd.com`, or `manual.seafile.com` — anywhere in either repo (UI templates, JS, Docker files, config files, documentation) — must be replaced with `https://redirish.global`. This applies to both the wiki frontend repo and the Docker repo.
+Any URL referencing `seafile.com`, `seafileltd.com`, or `manual.seafile.com` — anywhere in either repo (UI templates, JS, email templates, Docker files, config files, documentation) — must be replaced with `https://redirish.global`.
 
 ### Domains to replace (all variants)
 | Original domain | Replacement |
@@ -53,10 +53,27 @@ Any URL referencing `seafile.com`, `seafileltd.com`, or `manual.seafile.com` —
 | `seafileltd.com` (any subdomain or path) | `https://redirish.global` |
 | `manual.seafile.com` (any path) | `https://redirish.global` |
 | `forum.seafile.com` | `https://redirish.global` |
+| `www.seafile.com` (any path) | `https://redirish.global` |
 
 ### Scope
-- **ALLOWED**: replacing `href` values, visible link text, `image:` pull URLs in Docker files, and any hardcoded URL string in config or compose files pointing to the above domains
+- **ALLOWED**: replacing `href` values, visible link text, `image:` pull URLs in Docker files, hardcoded URL strings in config or compose files, and any URL in email template body text pointing to the above domains
 - **NEVER TOUCH**: internal Django `{% url %}` tags, `SITE_ROOT`-relative paths, API base URLs, or any URL that routes within the application itself
+
+## Email Templates
+
+These rules apply to all email templates (`*.html`, `*.txt`) under `seahub/templates/` and any subdirectory.
+
+### ALLOWED — replace in email templates
+- All visible body text containing "Seafile" → "Tengis Wiki"
+- Email subject lines containing "Seafile" → "Tengis Wiki"
+- `{{ site_name }}` usage is already brand-neutral (dynamic); leave template variables as-is
+- Any hardcoded `seafile.com` / `seafileltd.com` URLs in email body → `https://redirish.global`
+
+### NEVER TOUCH in email templates
+- Template variable names (e.g. `{{ site_name }}`, `{{ user }}`, `{{ email }}`)
+- Django template tags (`{% load %}`, `{% block %}`, `{% url %}`, `{% blocktrans %}`, `{% trans %}`)
+- Email routing logic, SMTP configuration, or backend sending code
+- `From:` / `Reply-To:` header values set in Python code (not templates)
 
 ## Docker Naming (Docker repo)
 
