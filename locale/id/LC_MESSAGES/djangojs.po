@@ -460,7 +460,7 @@ msgstr "Versi Server: "
 
 #: frontend/src/components/dialog/about-dialog.js:88
 msgid "Seafile"
-msgstr "Seafile"
+msgstr "Tengis Wiki"
 
 #: frontend/src/components/dialog/about-dialog.js:90
 msgid "About Us"
@@ -3335,7 +3335,7 @@ msgid ""
 "When you set a secret, you will receive the X-Seafile-Signature header in "
 "the webhook POST request, which is the SHA256 encryption result of the "
 "secret and request.body."
-msgstr "Saat Anda menyetel rahasia, Anda akan menerima header X-Seafile-Signature dalam permintaan POST webhook, yang merupakan hasil enkripsi SHA256 dari rahasia dan request.body."
+msgstr "Saat Anda menyetel rahasia, Anda akan menerima header X-Tengis Wiki-Signature dalam permintaan POST webhook, yang merupakan hasil enkripsi SHA256 dari rahasia dan request.body."
 
 #: frontend/src/components/dialog/repo-webhook-dialog/index.js:134
 msgid "Webhooks"
@@ -9051,11 +9051,11 @@ msgstr "Gunakan nilai ini untuk mengonfigurasi Penyedia Identitas (IdP) Anda"
 
 #: frontend/src/pages/org-admin/org-saml-config.js:160
 msgid "Configure Seafile"
-msgstr "Konfigurasikan Seafile"
+msgstr "Konfigurasikan Tengis Wiki"
 
 #: frontend/src/pages/org-admin/org-saml-config.js:161
 msgid "Use information from your Identity Provider to configure Seafile"
-msgstr "Gunakan informasi dari Penyedia Identitas Anda untuk mengonfigurasi Seafile"
+msgstr "Gunakan informasi dari Penyedia Identitas Anda untuk mengonfigurasi Tengis Wiki"
 
 #: frontend/src/pages/org-admin/org-saml-config.js:174
 msgid "Certificate"
@@ -10500,7 +10500,7 @@ msgstr "Nonaktifkan sinkronisasi dengan folder mana pun"
 msgid ""
 "If turn on, the desktop clients will not be able to sync a folder outside "
 "the default Seafile folder."
-msgstr "Jika diaktifkan, klien desktop tidak akan dapat menyinkronkan folder di luar folder default Seafile."
+msgstr "Jika diaktifkan, klien desktop tidak akan dapat menyinkronkan folder di luar folder default Tengis Wiki."
 
 #: frontend/src/pages/sys-admin/web-settings/web-settings.js:325
 #| msgid "No terms and conditions"

@@ -93,6 +93,34 @@ These rules apply to all `Dockerfile`, `docker-compose.yml`, and related config 
 - Network names used only internally between containers (unless user-visible)
 - Port mappings and other non-naming configuration
 
+## Locale / Translation Files (.po)
+
+- **Only replace `Seafile` → `Tengis Wiki` in `msgstr` lines** (the translated output shown to users)
+- **Never touch `msgid` lines** — they are lookup keys used by Django's translation engine; changing them breaks all translations silently
+- The correct sed scope flag is `/^msgstr/s/Seafile/Tengis Wiki/g`
+- Multi-line `msgstr ""` blocks (where the string continues on the next line with `"..."`) are also safe to edit on each continuation line, as long as the `msgid` above is not touched
+
+## Post-Rebranding Verification
+
+After any rebranding session, always run a final grep across all user-facing files before closing:
+
+```bash
+grep -rn "Seafile" seahub/templates/ frontend/src/ locale/
+```
+
+Report every remaining hit with one of these category labels — do not silently skip any:
+
+| Category | Example | Action |
+|---|---|---|
+| **JS identifier** | `enableSeafileAI`, `SeafileCodeMirror` | Leave — internal code |
+| **CSS class name** | `.seafile-mask`, `.seafile-multicolor-icon` | Leave — class names |
+| **Import / package path** | `from '@seafile/comment-editor'` | Leave — module name |
+| **HTTP header name** | `X-Seafile-Signature` | Leave — protocol identifier |
+| **msgid lookup key** | `msgid "Seafile"` | Leave — translation key |
+| **User-facing string** | `msgstr "Seafile"`, `{% trans "Seafile..." %}` | Fix immediately |
+
+Only close the session once all remaining hits are categorised and zero user-facing strings remain.
+
 ## General Rules
 
 - Never modify function names, API endpoints, URL routes, or backend logic.

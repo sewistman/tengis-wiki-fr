@@ -1329,7 +1329,7 @@ msgstr "Değiştirilmiş kütüphane adı ya da açıklaması"
 #: seahub/base/templatetags/seahub_tags.py:177
 #: seahub/base/templatetags/seahub_tags.py:248
 msgid "Auto merge by seafile system"
-msgstr "Seafile sistemi tarafından oto birleştirme"
+msgstr "Tengis Wiki sistemi tarafından oto birleştirme"
 
 #: seahub/base/templatetags/seahub_tags.py:179
 #: seahub/base/templatetags/seahub_tags.py:250

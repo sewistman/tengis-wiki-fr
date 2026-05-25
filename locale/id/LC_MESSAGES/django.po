@@ -1323,7 +1323,7 @@ msgstr "Mengubah nama atau deskripsi pustaka"
 #: seahub/base/templatetags/seahub_tags.py:177
 #: seahub/base/templatetags/seahub_tags.py:248
 msgid "Auto merge by seafile system"
-msgstr "Penggabungan otomatis oleh sistem Seafile"
+msgstr "Penggabungan otomatis oleh sistem Tengis Wiki"
 
 #: seahub/base/templatetags/seahub_tags.py:179
 #: seahub/base/templatetags/seahub_tags.py:250

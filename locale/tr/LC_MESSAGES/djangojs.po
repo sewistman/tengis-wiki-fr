@@ -462,7 +462,7 @@ msgstr "Sunucu Versiyonu:"
 
 #: frontend/src/components/dialog/about-dialog.js:88
 msgid "Seafile"
-msgstr "Seafile"
+msgstr "Tengis Wiki"
 
 #: frontend/src/components/dialog/about-dialog.js:90
 msgid "About Us"
@@ -9053,11 +9053,11 @@ msgstr "Kimlik Sağlayıcınızı yapılandırmak için bu değerleri kullanın"
 
 #: frontend/src/pages/org-admin/org-saml-config.js:160
 msgid "Configure Seafile"
-msgstr "Seafile'ı Yapılandırın"
+msgstr "Tengis Wiki'ı Yapılandırın"
 
 #: frontend/src/pages/org-admin/org-saml-config.js:161
 msgid "Use information from your Identity Provider to configure Seafile"
-msgstr "Seafile'ı yapılandırmak için Kimlik Sağlayıcınızdan bilgi kullanın"
+msgstr "Tengis Wiki'ı yapılandırmak için Kimlik Sağlayıcınızdan bilgi kullanın"
 
 #: frontend/src/pages/org-admin/org-saml-config.js:174
 msgid "Certificate"
@@ -10502,7 +10502,7 @@ msgstr "Herhangi bir klasörle senkronizasyonu devre dışı bırak"
 msgid ""
 "If turn on, the desktop clients will not be able to sync a folder outside "
 "the default Seafile folder."
-msgstr "Açılırsa, masaüstü istemcileri varsayılan Seafile klasörü dışındaki bir klasörü senkronize edemez."
+msgstr "Açılırsa, masaüstü istemcileri varsayılan Tengis Wiki klasörü dışındaki bir klasörü senkronize edemez."
 
 #: frontend/src/pages/sys-admin/web-settings/web-settings.js:325
 #| msgid "No terms and conditions"
