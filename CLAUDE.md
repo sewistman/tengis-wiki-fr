@@ -93,6 +93,10 @@ These rules apply to all `Dockerfile`, `docker-compose.yml`, and related config 
 - Network names used only internally between containers (unless user-visible)
 - Port mappings and other non-naming configuration
 
+## Supported Locales
+
+Supported locales are **`tr` (Turkish)**, **`id` (Indonesian)**, **`en`**, and **`en_US`** only. All other locale folders have been removed and must not be recreated. Any tooling, scripts, or commands that generate or scaffold locale files must be scoped to these four locales.
+
 ## Locale / Translation Files (.po)
 
 - **Only replace `Seafile` → `Tengis Wiki` in `msgstr` lines** (the translated output shown to users)
