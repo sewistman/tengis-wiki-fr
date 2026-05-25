@@ -44,22 +44,41 @@ Copyright owner is **Tengis Wiki**. The copyright line should read:
 
 ## External URLs
 
-Any user-facing help links, support links, or `seafile.com` URLs rendered in the UI must be replaced with `https://redirish.global`.
+Any URL referencing `seafile.com`, `seafileltd.com`, or `manual.seafile.com` — anywhere in either repo (UI templates, JS, Docker files, config files, documentation) — must be replaced with `https://redirish.global`. This applies to both the wiki frontend repo and the Docker repo.
 
-### Examples
-| Original | Replacement |
-|----------|-------------|
-| `https://www.seafile.com/en/download/` | `https://redirish.global` |
-| `https://forum.seafile.com` | `https://redirish.global` |
-| `http://seafile.com/download/` | `https://redirish.global` |
+### Domains to replace (all variants)
+| Original domain | Replacement |
+|-----------------|-------------|
+| `seafile.com` (any subdomain or path) | `https://redirish.global` |
+| `seafileltd.com` (any subdomain or path) | `https://redirish.global` |
+| `manual.seafile.com` (any path) | `https://redirish.global` |
+| `forum.seafile.com` | `https://redirish.global` |
 
 ### Scope
-- **ALLOWED**: replacing `href` values and visible link text in HTML templates and JS that point to `seafile.com` domains
+- **ALLOWED**: replacing `href` values, visible link text, `image:` pull URLs in Docker files, and any hardcoded URL string in config or compose files pointing to the above domains
 - **NEVER TOUCH**: internal Django `{% url %}` tags, `SITE_ROOT`-relative paths, API base URLs, or any URL that routes within the application itself
+
+## Docker Naming (Docker repo)
+
+These rules apply to all `Dockerfile`, `docker-compose.yml`, and related config files in the Docker repo.
+
+### Container and image names
+- All container names must use the `tengis` prefix (e.g. `tengis-backend`, `tengis-db`, `tengis-nginx`)
+- Image names must not reference `seafile` or `seafileltd` — use `tengis` equivalents
+- Version labels and image metadata must read "Tengis Wiki" not "Seafile"
+
+### Service names in docker-compose files
+- Service keys must use `tengis` naming (e.g. `tengis-server`, `tengis-db`) not `seafile-*`
+
+### What NOT to change in Docker files
+- Internal environment variable names passed to application code (these are backend config keys)
+- Volume mount paths that the application code reads by convention
+- Network names used only internally between containers (unless user-visible)
+- Port mappings and other non-naming configuration
 
 ## General Rules
 
 - Never modify function names, API endpoints, URL routes, or backend logic.
 - Never modify CSS class names.
-- Only change visible UI strings, page titles, copyright notices, color values, and external seafile.com URLs.
-- When in doubt about whether something is "user-facing", do not change it and ask first.
+- Only change visible UI strings, page titles, copyright notices, color values, external seafile.com/seafileltd.com URLs, and Docker naming as described above.
+- When in doubt about whether something is "user-facing" or "naming" vs "internal config", do not change it and ask first.
