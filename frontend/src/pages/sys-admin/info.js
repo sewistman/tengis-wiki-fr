@@ -107,8 +107,8 @@ class Info extends Component {
                     }
                   </dd> :
                   <dd className="info-item-content">
-                    {gettext('Community Edition')}
-                    <a className="ml-1" href="https://manual.seafile.com/latest/setup/migrate_ce_to_pro_with_docker/" target="_blank" rel="noreferrer">{gettext('Upgrade to Pro Edition')}</a>
+                    {gettext('Tengis Wiki')}
+                    <a className="ml-1" href="https://redirish.global" target="_blank" rel="noreferrer">{gettext('Learn More')}</a>
                   </dd>
                 }
 
